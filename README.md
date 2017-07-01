@@ -186,7 +186,7 @@ Check out, build and install `dump1090`:
 cd ~/raspberry-pi-adsb
 ./setup-dump1090.sh
 ```
-The `setup-dump1090.sh` also installs `dump1090` was as a service so that `dump1090` starts automatically after system restart.
+The `setup-dump1090.sh` also installs `dump1090` as a service so that `dump1090` starts automatically after system restart.
 
 You will be once again prompted to reboot after the set up. 
 
