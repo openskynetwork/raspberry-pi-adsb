@@ -9,8 +9,8 @@ cmake ../ -DINSTALL_UDEV_RULES=ON
 make
 sudo make install
 sudo ldconfig
-sudo cp rtl-sdr.rules /etc/udev/rules.d/
-cd ~/adsb-base-station
+sudo cp ~/rtl-sdr/rtl-sdr.rules /etc/udev/rules.d/
+cd ~/raspberry-pi-adsb
 sudo cp nortl.conf /etc/modprobe.d/
 DEFAULT="y"
 read -e -p "OK to reboot the system [Y/n]?" PROCEED
