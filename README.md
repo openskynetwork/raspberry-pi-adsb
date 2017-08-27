@@ -229,9 +229,7 @@ sudo /etc/init.d/dump1090.sh start
 
 # Connecting your base station to the OpenSky Network
 
-To connect your base station to the OpenSky Network you must make the port `30005` on your Raspberry Pi available from the internet via static host or IP address.
-
-The guide below illustrates configuration on the home network behind the FRITZ!Box 7490 router. I am sorry that the screenshots are in German, I can't easily switch interface language of my router.
+I am sorry that the screenshots are in German, I can't easily switch interface language of my router.
 
 ## Configure the Raspberry Pi device on your Network
 
@@ -244,41 +242,11 @@ Now you should be able to reach the `dump1090` instance running on the Raspberry
 
 You should also be able to connect to the port `30005` (for instance via Putty) and see some binary data coming from the Raspberry Pi.
 
-## Configure dynamic DNS
+## Install the feeder
 
-Condiguring dynamic DNS via provider like [No-IP.com](http://www.noip.com/) will give you a static host name even for dynamically assigned IP addresses.
+Just follow the steps mentioned here: https://opensky-network.org/community/projects/30-dump1090-feeder
 
-* Create a [No-IP.com](http://www.noip.com/) account - I'll use `argon-adsb` username for example
-* Create a new hostname - I'll use `argon-adsb.ddns.net` for example  
-![Creating argon-adsb.ddns.net hostname](images/noip-hostname.png)
-* Configure dynamic DNS in your router  
-![Configuring dynamic DNS in your router](images/network-configuration-dynamic-dns.png)
-
-## Configure port forwarding
-
-You will need to make the port `30005` on your Raspberry Pi avaliable from the internet. For this, configure the forwaring of the `30005` to the `argon` host (Raspberry Pi).
-
-![Forwarding port 30005 to argon](images/network-configuration-port.png)
-
-Now you should be able to connect to `argon-adsb.ddns.net:30005` via Putty and see a binary stream coming from `dump1090` on the Raspberry Pi.
-
-Additionally, you can also forward the port `8080` to `argon:8080` so that you could access the web-interface of `dump1090` via `http://argon-adsb.ddns.net:8080`.
-
-## OpenSky Network configuration
-
-* Create an OpenSky Network account
-* Add a new sensor: `My OpenSky` > `My Sensors` > `Add Sensor`
-* Receiver Type: `dump1090`
-* Hostname: `argon-adsb.ddns.net`
-* Port: `30005`
-* Enter or pick your location
-* Submit
-
-![Creating new sensor on OpenSky Network](images/osn-new-sensor.png)
-
-Now you should see your sensor on the map. If everything's fine, the sensor should go online in a couple of minutes.
-
-![New OpenSky Network sensor on the map](images/osn-new-sensor-on-map.png)
+Once you set everything up and entered your OpenSky username correctly, it'll show up in your receiver profile (My OpenSky > Receiver Profile).
 
 # Credits
 
