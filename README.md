@@ -227,22 +227,7 @@ Finally, start the `dump1090` service again:
 sudo /etc/init.d/dump1090.sh start
 ```
 
-# Connecting your base station to the OpenSky Network
-
-I am sorry that the screenshots are in German, I can't easily switch interface language of my router.
-
-## Configure the Raspberry Pi device on your Network
-
-* Give Raspberry Pi a name (I'll use `argon` for example)
-* Select "Always use the same IP address"
-
-![Configuring the Raspberry Pi device](images/network-configuration-device.png)
-
-Now you should be able to reach the `dump1090` instance running on the Raspberry Pi via `http://argon:8080`.
-
-You should also be able to connect to the port `30005` (for instance via Putty) and see some binary data coming from the Raspberry Pi.
-
-## Install the feeder
+### Install the feeder
 
 Just follow the steps mentioned here: https://opensky-network.org/community/projects/30-dump1090-feeder
 
