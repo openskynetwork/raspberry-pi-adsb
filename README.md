@@ -23,7 +23,7 @@ This guide assumes installation in a home network with internet connection via r
 * The most important prerequisite is place with clear view of the sky where you could place the antenna.
 * If you want to feed your data into [OpenSky Network](https://opensky-network.org/), you must be able to open and forward ports on your router.
 * [OpenSky Network](https://opensky-network.org/) needs a static host name or IP address to connect to your base station.
-If you don't have a static IP address (you normally don't), your router must support dynamic DNS using a provider like [No-IP.com](http://www.noip.com/).
+If you don't have a static IP address (you normally don't), your router must support dynamic DNS using a provider like [DuckDNS.org](https://duckdns.org) [No-IP.com](http://www.noip.com/).
 * Your router must support WiFi so that you could connect Raspberry Pi to the network wirelessly.
 
 # Shopping list
