@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get install pkg-config
 cd ~
-git clone git://github.com/MalcolmRobb/dump1090.git
+git clone https://github.com/MalcolmRobb/dump1090.git
 cd dump1090
 make
 cd ~/raspberry-pi-adsb
